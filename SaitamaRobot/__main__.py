@@ -72,11 +72,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
- Yahho Watashi Nobara Desu, I am Groups Management Bot !! I can Help You Manage Your Group for you!!, send /help for command list...[.](https://telegra.ph/file/1f054a1f6e857f6c4428d.jpg)
+ Yahho Watashi Nobara Desu, I am Groups Management Bot !! I can Help You Manage Your Group for you!!, send /help for command list...[.](https://te.legra.ph/file/1c57627c19af5cda69149.jpg)
 """
 
 HELP_STRINGS = """
-Hey there, I'm Nobara Kugisaki!
+Hey there, I'm samurai av!
 To make me functional, make sure that i have enough rights in your group.
 
 Helpful commands:
@@ -84,7 +84,7 @@ Helpful commands:
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
 
-Join My Support If You Have Any Queries: @NobaraSupport
+Join My Support If You Have Any Queries: @Bio_OF_Ronin
 
 All commands can be used with the following: / !
 List of all the Modules:
@@ -93,7 +93,7 @@ List of all the Modules:
     "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.",
 )
 
-EREN_IMG = "https://telegra.ph/file/8ab770904946c033f114e.jpg"
+EREN_IMG = "https://te.legra.ph/file/1c57627c19af5cda69149.jpg"
 
 DONATE_STRING = """Durov Is my Cousin By The Way.."""
 
@@ -225,23 +225,23 @@ def start(update: Update, context: CallbackContext):
                             ),
                             InlineKeyboardButton(
                                 text="🚦 ᴜᴘᴅᴀᴛᴇs 🚦",
-                                url="https://t.me/NobaraBotUpdates",
+                                url="https://t.me/bio_of_Ronin",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text=" ᴡɪᴢᴀʀᴅ ",
-                                url="https://t.me/NobaraBotUpdates/5",
+                                url="https://t.me/bio_OF_Ronin/5",
                             ),
                             InlineKeyboardButton(
                                 text="ɢʀᴏᴜᴘ",
-                                url="https://t.me/The_Phantom_Troupe/",
+                                url="https://t.me/Ronin_Fighters_Fd/",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text="⚓️ ʜᴇʟᴘ ⚓️",
-                                url="https://t.me/Nobara_superbot?start=help",
+                                url="https://t.me/Avivekbot?start=help",
                             ),
                         ],
                     ],
