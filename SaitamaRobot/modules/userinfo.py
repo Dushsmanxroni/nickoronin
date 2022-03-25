@@ -287,26 +287,26 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThe Disaster level of this person is <b>'GOD'</b>."
+        text += "\n\nThe Disaster level of this person is <b>'Keyaru-Sama'</b>."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of the 'Wizard Throne Holder'."
+        text += "\n\nThis user is member of the 'Healer'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Disaster level of this person is 'Wizard Dragon'."
+        text += "\n\nThe Disaster level of this person is 'Knight'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Disaster level of this person is 'Wizard Demon'."
+        text += "\n\nThe Disaster level of this person is 'Attacker'."
         disaster_level_present = True 
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'Wizard Tiger'."
+        text += "\n\nThe Disaster level of this person is 'Defender'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Disaster level of this person is 'Wizard Wolf'."
+        text += "\n\nThe Disaster level of this person is 'Demi-Human'."
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/NobaraBotUpdates/5">?</a>]'.format(
+        text += ' [<a href="https://t.me/Freia_Updates/5">◉</a>]'.format(
             bot.username,
         )
 
@@ -478,7 +478,7 @@ def set_about_bio(update: Update, context: CallbackContext):
             message.reply_text(
                 "Erm... yeah, I only trust the Ackermans to set my bio.",
             )
-            return
+            return      
 
         text = message.text
         bio = text.split(
@@ -519,28 +519,23 @@ When marked as AFK, any mentions will be replied to with a message to say you're
 This also sends your last seen based on when you ran afk!
  • `/afk`*:* <reason>: mark yourself as AFK (away from keyboard).
  • `brb` <reason>: same as the afk command - but not a command.
-
 *ID:*
  • `/id`*:* get the current group id. If used by replying to a message, gets that user's id.
  • `/gifid`*:* reply to a gif to me to tell you its file ID.
-
 *Self addded information:*
  • `/setme <text>`*:* will set your info
  • `/me`*:* will get your or another user's info.
 Examples:
  `/setme I am a garrison.`
  `/me @username(defaults to yours if no user specified)`
-
 *Information others add on you:*
  • `/bio`*:* will get your or another user's bio. This cannot be set by yourself.
 • `/setbio <text>`*:* while replying, will save another user's bio
 Examples:
  `/bio @username(defaults to yours if not specified).`
  `/setbio This user is a wolf` (reply to the user)
-
 *Overall Information about you:*
  • `/info`*:* get information about a user.
-
 *What is that health thingy?*
  Come and see [HP System explained](https://t.me/foundingtitanupdates/19)
 """
